@@ -1,0 +1,60 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+/* Контейнер для колонок */
+.main-container {
+    display: flex;
+    gap: 10px;
+    align-items: stretch; /* Робить всі колонки однакової висоти */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Налаштування колонки */
+.column {
+    flex: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовки з кольором */
+.header {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Контент та КАРТИНКИ */
+.content {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.content img {
+    width: 100%;       /* На всю ширину колонки */
+    height: 150px;     /* ФІКСОВАНА висота для всіх фото */
+    object-fit: cover; /* Це зробить фото РІВНИМИ (обріже зайве, не сплющить) */
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* КОЛЬОРИ як на зразку */
+.yellow { background-color: #fdfae5; }
+.yellow .header { background-color: #c0a040; }
+
+.green { background-color: #f0f7f0; }
+.green .header { background-color: #2e7d32; }
+
+.teal { background-color: #eafaf9; }
+.teal .header { background-color: #00897b; }
+
+.pink { background-color: #fff0f5; }
+.pink .header { background-color: #d81b60; }
