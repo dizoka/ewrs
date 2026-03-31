@@ -1,9 +1,13 @@
-h2 {
-    color: #565656;
+.main-container {
+    display: flex;
+    gap: 20px;
 }
 
-li {
-    color: #0404ba;
-    line-height: 1.5;
-    font-size: 16pt;
+.column {
+    width: 25%;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
 }
